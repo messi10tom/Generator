@@ -3,7 +3,7 @@ Generate combinations according to the specs
 
 ## Parameters
 
-###characters
+### characters
 It is a list which contains characters that are included in combinations.
 ###digits
 Number of digits of output.
