@@ -2,7 +2,7 @@
 Generate combinations according to the specs
 
 ## Parameters
-**characters ** - It is a list which contains characters that are included in combinations
+**characters ** - It is a list which contains characters that are included in combinations \n
 **digits ** - Number of digits of output
 **minIndexNum ** - Minimum of output
 **maxIndexNum ** - Maximum of output
