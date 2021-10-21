@@ -11,3 +11,12 @@ Generate combinations according to the specs
 **explicit** - If its true the Generator will generate complete amount of combination.  
 **shuffle** - It will shuffle the entire combination list randomly if its true. Integers is also accepted as seeds.  
 
+## HOW TO USE
+There are three ways to use it
+### Method 1
+
+`characters =  ['a', 'b', 'c']
+_, combinations = Generator(characters, digits=2)`
+output = '['aa', 'ab', 'ac', 'ba', 'bb', 'bc', 'ca', 'cb', 'cc']'
+
+
