@@ -36,7 +36,7 @@ def Generator(characters, digits=None, minIndexNum=None, maxIndexNum=None, wordL
             elif shuffle == True:
               if wordListFILE:print("Warning! shuffle don't work in FILE mode")
               random.shuffle(wordList)
-            if wordListFILE:return missing
+            if wordListFILE:return (missing, wordListFILE)
             return (missing, wordList)
 
 
