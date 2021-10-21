@@ -15,14 +15,14 @@ Generate combinations according to the specs
 There are two ways to use it
 ### Method-1
 
-`characters =  ['a', 'b', 'c']
+`characters =  ['a', 'b', 'c']  
 _, combinations = Generator(characters, digits=2)`  
 output = '['aa', 'ab', 'ac', 'ba', 'bb', 'bc', 'ca', 'cb', 'cc']'
 
 ### Method-2
 
-`characters =  ['a', 'b', 'c']
-minIndexNum, maxIndexNum = [1, 0], [1, 2] # these numbers represents index of characters 
+`characters =  ['a', 'b', 'c']  
+minIndexNum, maxIndexNum = [1, 0], [1, 2] # these numbers represents index of characters  
 _, combinations = Generator(characters, minIndexNum=minIndexNum, maxIndexNum=maxIndexNum)`  
 output = '['ba', 'bb', 'bc']'
 
