@@ -15,7 +15,7 @@ Generate combinations according to the specs
 There are two ways to use it
 ### Method-1
 
-`characters =  ['a', 'b', 'c']  
+`characters =  ['a', 'b', 'c']   
 _, combinations = Generator(characters, digits=2)`  
 output = '['aa', 'ab', 'ac', 'ba', 'bb', 'bc', 'ca', 'cb', 'cc']'
 
