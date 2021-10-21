@@ -1,7 +1,8 @@
 # Generator
 Generate combinations according to the specs
 
-## Parameters.
+## Parameters
+
 ###characters
 It is a list which contains characters that are included in combinations.
 ###digits
