@@ -30,7 +30,7 @@ output = '['ba', 'bb', 'bc']'
 
 ### OTHER FEATURES
 1. SAVE IN FILE
-   **wordListFILE** parameter allows you to save file in your system.
+   **wordListFILE** parameter allows you to save file in your system.  
     `characters =  ['a', 'b', 'c']`   
     `_, combinations = Generator(characters, digits=2, wordListFILE=open('wordlist.txt', 'w+'))`  
     `combinations.seek(0)`  
@@ -38,14 +38,25 @@ output = '['ba', 'bb', 'bc']'
     `combinations = combinations.splitlines()`  
     `print(combinations)`  
     output = '['aa', 'ab', 'ac', 'ba', 'bb', 'bc', 'ca', 'cb', 'cc']'  
+    
 2. EXPLICIT
    **explicit** parameter will gets all combinations. Main use of explite is if its False then the generation will be fast if its true it can crash(depends on digits).  
    `characters =  ['a', 'b', 'c']`  
    `missed, combinations = Generator(characters, digits=3, explicit=False)`  
    `print(missed)`  
-   output = 2
+   output = 2  
    `characters =  ['a', 'b', 'c']`  
    `missed, combinations = Generator(characters, digits=3, explicit=True)`  
    `print(missed)`  
-   output = 0
+   output = 0  
    
+3. SHUFFLING
+   **shuffle** parameter will shuffles all combinations. Note that it won't shuffle if you choose file(wordListFILE parameter) as output. you can also give seed.  
+   `characters =  ['a', 'b', 'c']`  
+   `missed, combinations = Generator(characters, digits=2, shuffle=True)`  
+   `print(combinations)`  
+   output = '['ab', 'ba', 'ac', 'ca', 'cc', 'aa', 'bc', 'cb', 'bb']'  
+   `characters =  ['a', 'b', 'c']`  
+   `missed, combinations = Generator(characters, digits=2, shuffle=1)`  
+   `print(combinations)`  
+   output = '['bc', 'ca', 'cb', 'bb', 'ba', 'aa', 'cc', 'ab', 'ac']'  
