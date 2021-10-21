@@ -16,7 +16,7 @@ There are three ways to use it
 ### Method 1
 
 `characters =  ['a', 'b', 'c']
-_, combinations = Generator(characters, digits=2)`
+_, combinations = Generator(characters, digits=2)`  
 output = '['aa', 'ab', 'ac', 'ba', 'bb', 'bc', 'ca', 'cb', 'cc']'
 
 
